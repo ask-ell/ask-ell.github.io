@@ -1,14 +1,14 @@
 {
   "name": "@askell/website",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
   "scripts": {
     "serve": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "postinstall": "husky install"
   },
   "devDependencies": {
     "@types/node": "^18.16.3",
+    "husky": "^8.0.3",
     "sass": "^1.62.0",
     "vite": "^4.3.2"
   }
