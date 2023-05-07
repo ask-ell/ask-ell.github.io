@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  website:
+    image: node:16
+    user: node
+    working_dir: /usr/src/website
+    volumes:
+      - $PWD:/usr/src/website
+    command: yarn serve
+    ports:
+      - 3000:3000

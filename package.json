@@ -1,5 +1,5 @@
 {
-  "name": "@askell/website",
+  "name": "@ask-ell/website",
   "version": "1.0.0",
   "scripts": {
     "serve": "vite",
