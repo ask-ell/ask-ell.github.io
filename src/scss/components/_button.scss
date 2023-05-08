@@ -3,8 +3,17 @@
 // -----------------------------------------------------------------------------
 
 .button {
-    color: #fff;
-    background-color: red;
+    color: $text-color;
+        background-color: $button-background-color;
     border-radius: 0.25rem;
     padding: 1rem;
+    display: block;
+    width: max-content;
+    transition: all 0.15s linear;
+        border: 1px solid $button-border-color;
+    
+        @include on-event {
+            color: $button-border-color;
+            background-color: $button-background-color-hover;
+        }
 }

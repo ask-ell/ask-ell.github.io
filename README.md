@@ -5,7 +5,7 @@
 - [Docker](https://www.docker.com/)
 - [Docker Compose V2](https://docs.docker.com/compose/)
 
-### Run in your machine
+### Run the project
 ```bash
 make serve
 ```
