@@ -12,6 +12,9 @@ html {
 
 .section {
     padding-top: 5rem;
+&:last-of-type {
+        padding-bottom: 3rem;
+    }
 }
 
 .brand-section {
