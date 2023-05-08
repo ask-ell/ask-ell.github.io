@@ -9,6 +9,10 @@ node_modules/time:
 serve: node_modules/time
 	$(compose) up -d
 
+.PHONY: shell
+shell: node_modules/time
+	$(run) node bash
+
 .PHONY: build
 build: node_modules/time
 	$(run) node yarn build
