@@ -2,16 +2,16 @@ compose := docker compose
 run := $(compose) run --rm -T
 
 node_modules/time:
-	$(run) website yarn
+	$(run) node yarn
 	touch node_modules/time
 
 .PHONY: serve
 serve: node_modules/time
-	$(compose) up
+	$(compose) up -d
 
 .PHONY: build
 build: node_modules/time
-	$(run) website yarn build
+	$(run) node yarn build
 
 .PHONY: clean
 clean:

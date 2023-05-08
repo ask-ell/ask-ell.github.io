@@ -1,7 +1,7 @@
 version: "3"
 
 services:
-  website:
+  node:
     image: node:16
     user: node
     working_dir: /usr/src/website
@@ -10,3 +10,9 @@ services:
     command: yarn serve
     ports:
       - 3000:3000
+  nginx:
+    image: nginx:1.24.0
+    volumes:
+      - $PWD/docs:/usr/share/nginx/html
+    ports:
+      - 8080:80
