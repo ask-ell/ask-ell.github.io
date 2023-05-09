@@ -13,6 +13,10 @@ serve: node_modules/time
 shell: node_modules/time
 	$(run) node bash
 
+.PHONY: format
+format: node_modules/time
+	$(run) node yarn format
+
 .PHONY: build
 build: node_modules/time
 	$(run) node yarn build
