@@ -1,5 +1,5 @@
 compose := docker compose
-run := $(compose) run --rm -T
+run := $(compose) run --rm --user node -T
 
 node_modules/time:
 	$(run) node yarn
@@ -11,7 +11,7 @@ serve: node_modules/time
 
 .PHONY: shell
 shell: node_modules/time
-	$(run) node bash
+	$(run) node /bin/bash
 
 .PHONY: format
 format: node_modules/time
