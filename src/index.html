@@ -5,17 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ask'ell | Editeur de logiciels conformes à vos idées</title>
+    <link
+      rel="stylesheet"
+      href="https://www.unpkg.com/@ask-ell/antheme@1.0.1/dist/themes/default.css"
+    />
     <link rel="stylesheet" href="./scss/main.scss" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="shortcut icon"
       href="./images/ask-ell-logo.png"
       type="image/x-icon"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
     />
     <meta
       name="description"
@@ -24,7 +22,7 @@
   </head>
 
   <body>
-    <header>
+    <header class="antheme-flat-background-color-dark">
       <nav class="container navbar">
         <a href=""> <img height="60" src="./images/ask-ell-logo.png" /></a>
         <ul class="navbar-items">
@@ -97,7 +95,7 @@
           </div>
         </div>
         <div class="call-to-action">
-          <a href="mailto:yannickdebree@ask-ell.com" class="button"
+          <a href="mailto:yannickdebree@ask-ell.com" class="antheme-button"
             >Obtenir un devis</a
           >
         </div>
@@ -139,14 +137,7 @@
       <div class="container section portfolio-section" id="portfolio">
         <h2 class="centered">Réalisations</h2>
         <div class="imaged-section">
-          <div class="imaged-section-img carousel">
-            <img src="./images/planned-session-screenshot-1.png" />
-            <img src="./images/planned-session-screenshot-2.png" />
-            <img src="./images/planned-session-screenshot-3.png" />
-            <img src="./images/planned-session-screenshot-4.png" />
-            <img src="./images/planned-session-screenshot-5.png" />
-            <img src="./images/planned-session-screenshot-6.png" />
-          </div>
+          <antheme-carousel class="imaged-section-img"></antheme-carousel>
           <div class="imaged-section-text">
             <h3>Planned Session</h3>
             <p>
@@ -154,16 +145,14 @@
               personnalisés et de suivre votre progression.
             </p>
             <div class="links">
-              <a href="mailto:yannickdebree@ask-ell.com" class="button"
+              <a href="mailto:yannickdebree@ask-ell.com" class="antheme-button"
                 >Demander un accès</a
               >
             </div>
           </div>
         </div>
         <div class="imaged-section imaged-section-reversed">
-          <div class="imaged-section-img">
-            <img src="./images/takamouv-extention-navigateur-screenshot.png" />
-          </div>
+          <antheme-carousel class="imaged-section-img"></antheme-carousel>
           <div class="imaged-section-text">
             <h3>Takamouv - Extension pour navigateur</h3>
             <p>
@@ -186,12 +175,7 @@
           </div>
         </div>
         <div class="imaged-section">
-          <div class="imaged-section-img carousel">
-            <img src="./images/chess-memo-screenshot-1.png" />
-            <img src="./images/chess-memo-screenshot-2.png" />
-            <img src="./images/chess-memo-screenshot-3.png" />
-            <img src="./images/chess-memo-screenshot-4.png" />
-          </div>
+          <antheme-carousel class="imaged-section-img"></antheme-carousel>
           <div class="imaged-section-text">
             <h3>Chess Memo</h3>
             <p>
@@ -209,9 +193,7 @@
           </div>
         </div>
         <div class="imaged-section imaged-section-reversed">
-          <div class="imaged-section-img">
-            <img src="./images/antheme-screenshot.png" />
-          </div>
+          <antheme-carousel class="imaged-section-img"></antheme-carousel>
           <div class="imaged-section-text">
             <h3>Antheme</h3>
             <p>
@@ -229,7 +211,7 @@
         </div>
       </div>
     </main>
-    <footer>
+    <footer class="antheme-flat-background-color-dark">
       <div class="container">
         <ul class="links">
           <li class="link">
@@ -239,6 +221,8 @@
         </ul>
       </div>
     </footer>
-    <script src="./app/main.ts" type="module"></script>
+    <script src="https://www.unpkg.com/@ask-ell/antheme@1.0.1/dist/core/bundle.js"></script>
+    <script src="https://www.unpkg.com/@ask-ell/antheme@1.0.1/dist/carousel/bundle.js"></script>
+    <script src="./main.js" type="module"></script>
   </body>
 </html>
