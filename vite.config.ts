@@ -9,6 +9,7 @@ function getFolderAbsolutePath(pathFromProjectRootPath: string) {
 export default defineConfig({
   root: getFolderAbsolutePath("src"),
   publicDir: getFolderAbsolutePath("public"),
+  assetsInclude: [getFolderAbsolutePath("public")],
   server: {
     host: "0.0.0.0",
     port: 3000,
